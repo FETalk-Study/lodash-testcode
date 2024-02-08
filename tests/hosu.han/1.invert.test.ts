@@ -5,4 +5,9 @@ describe('invert', () => {
     const object = { a: 1, b: 2, c: 3 };
     expect(invert(object)).toEqual({ '1': 'a', '2': 'b', '3': 'c' });
   });
+
+  it('undefined values ​​are also replaced with key.', () => {
+    const object = { a: undefined };
+    expect(invert(object)).toEqual({"undefined": "a"})
+  });
 });
