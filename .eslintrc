@@ -79,7 +79,7 @@
         "operator-linebreak": "off",
         "object-curly-newline": "off",
         "prefer-rest-params": "off", // We need to use params.
-        "prettier/prettier": "error",
+        "prettier/prettier": ["error", {"endOfLine": "auto"}],
         "@typescript-eslint/no-shadow": "warn",
         "@typescript-eslint/no-use-before-define": ["warn", { "functions": false }],
         "import/no-cycle": "warn",
